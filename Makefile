@@ -4,16 +4,15 @@ FNMODE := $(shell cat ${FILE})
 install:
 	# Install the script
 	mkdir -p ~/bin
-	cp ./fn-*.sh ~/bin/
+	cp ./src/fn-*.sh ~/bin/
 	chmod +x ~/bin/fn-*.sh
 
 	# Install the icons
-	xdg-icon-resource install --novendor --context apps --size 512 ./fn-lock.png fn-lock
-	xdg-icon-resource install --novendor --context apps --size 512 ./fn-unlock.png fn-unlock
+	xdg-icon-resource install --novendor --context apps --size 512 ./src/fn-lock.png fn-lock
+	xdg-icon-resource install --novendor --context apps --size 512 ./src/fn-unlock.png fn-unlock
 
 	# Install the Launcher
-	xdg-desktop-menu uninstall ./fn-*.desktop
-	xdg-desktop-menu install ./fn-*.desktop
+	xdg-desktop-menu install ./src/fn-*.desktop
 
 	# Rename the launcher
 ifeq ($(findstring 0,$(FNMODE)),0)
@@ -31,3 +30,6 @@ endif
 	
 	# Update application menu list
 	xdg-desktop-menu forceupdate
+	
+uninstall:
+	xdg-desktop-menu uninstall fn-*.desktop
