@@ -1,5 +1,5 @@
 <figure>
- <img src="/petrstepanov/linux-fn-key-toggle/blob/master/resources/screenshot.png?raw=true" alt="Toggle keyboard FN (Function) key applications for Linux" />
+ <img src="https://github.com/petrstepanov/linux-fn-key-toggle/blob/master/resources/screenshot.png?raw=true" alt="Toggle keyboard FN (Function) key applications for Linux" />
  <figcaption>Screenshot of the toggle keyboard FN (Function) key application for Linux.</figcaption>
 </figure> 
 
