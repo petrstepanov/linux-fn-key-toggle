@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=FN Lock Autostart
+Comment=Set FN menu launcher to "Unlock"
+Icon=fn-unlock
+Exec=fn-autostart.sh
+Categories=Utility

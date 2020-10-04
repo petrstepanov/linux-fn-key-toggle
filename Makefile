@@ -1,5 +1,5 @@
 FILE=/sys/module/hid_apple/parameters/fnmode
-FNMODE := $(shell cat ${FILE})
+FNMODE = $(shell cat ${FILE})
 
 install:
 	# Install the script
@@ -12,7 +12,10 @@ install:
 	xdg-icon-resource install --novendor --context apps --size 512 ./src/fn-unlock.png fn-unlock
 
 	# Install the Launcher
-	xdg-desktop-menu install ./src/fn-*.desktop
+	xdg-desktop-menu install ./src/fn-lock.desktop
+
+	# Install the autostart Lancher
+	cp ./src/fn-autostart.desktop $(HOME)/.config/autostart/
 
 	# Rename the launcher
 ifeq ($(findstring 0,$(FNMODE)),0)
