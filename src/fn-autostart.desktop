@@ -6,3 +6,4 @@ Comment=Set FN menu launcher to "Unlock"
 Icon=fn-unlock
 Exec=fn-autostart.sh
 Categories=Utility
+X-GNOME-Autostart-Delay=5
