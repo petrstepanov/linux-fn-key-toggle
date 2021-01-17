@@ -11,8 +11,9 @@ install:
 	xdg-icon-resource install --novendor --context apps --size 512 ./src/fn-lock.png fn-lock
 	xdg-icon-resource install --novendor --context apps --size 512 ./src/fn-unlock.png fn-unlock
 
-	# Install the Launcher
+	# Install the Launchers
 	xdg-desktop-menu install ./src/fn-lock.desktop
+	xdg-desktop-menu install ./src/fn-unlock.desktop	
 
 	# Install the autostart Lancher
 	cp ./src/fn-autostart.desktop $(HOME)/.config/autostart/
