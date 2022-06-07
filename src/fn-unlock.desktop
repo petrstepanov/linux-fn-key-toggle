@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=FN Unlock
-Comment=Toggle Function Keys on Mac keyboard
-Icon=fn-unlock
-Exec=fn-unlock.sh
-Categories=Utility
-NoDisplay=true
