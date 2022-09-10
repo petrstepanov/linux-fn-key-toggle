@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=FN Toggle Autostart
-Icon=fn-unlock
-Exec=fn-autostart.sh
+Name=FN Update Icon
+Icon=fn-special
+Exec=fn-update-icon.sh
 Categories=Utility
 X-GNOME-Autostart-Delay=5

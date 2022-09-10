@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# Install the script
-rm -rf ~/.local/bin/fn-toggle.sh
-rm -rf ~/.config/autostart/fn-autostart.sh
-
 # Uninstall launcher
-xdg-desktop-menu install ./src/fn-toggle.desktop
+xdg-desktop-menu uninstall ./src/fn-toggle.desktop
 xdg-desktop-menu forceupdate
 
 # Uninstall autostart item
