@@ -11,13 +11,13 @@ if [ $FNMODE = 1 ]; then
     # Delete line containing "Icon="
     sed -i "/Icon=/d" $SHORTCUT
     # Add line with new icon
-    echo "Icon=fn-special" >> $SHORTCUT
+    echo "Icon=fn-media" >> $SHORTCUT
 else
     # Keys act like "F#"
     # Delete line containing "Icon="
     sed -i "/Icon=/d" $SHORTCUT
     # Add line with new icon
-    echo "Icon=fn-f" >> $SHORTCUT
+    echo "Icon=fn-function" >> $SHORTCUT
 fi
 
 # Update application menu list

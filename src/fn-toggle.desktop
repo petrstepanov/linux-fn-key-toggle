@@ -5,4 +5,4 @@ Name=FN Toggle
 Comment=Toggle Function Keys on Mac keyboard
 Exec=fn-toggle.sh
 Categories=Utility
-Icon=fn-special
+Icon=fn-detecting
