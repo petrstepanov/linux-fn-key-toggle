@@ -25,6 +25,9 @@ fn-update-icon.sh
 
 echo "Setting default behavior to Media keys..."
 
+# Install policy
+sudo cp ./src/com.petrstepanov.linux-fn-key-toggle.policy /usr/share/polkit-1/actions
+
 # If Fedora (grubby command exists)
 FILE=/etc/fedora-release
 if test -f "$FILE"; then

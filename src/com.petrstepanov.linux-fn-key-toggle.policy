@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>Petr Stepanov</vendor>
+  <vendor_url>https://github.com/petrstepanov/linux-fn-key-toggle</vendor_url>
+
+  <action id="com.petrstepanov.linux-fn-key-toggle">
+    <description>FN Key Toggle</description>
+    <message>Authentication is required to toggle Function/Media keys</message>
+    <icon_name>fn-detecting</icon_name>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/tee</annotate>
+    <annotate key="org.freedesktop.policykit.exec.argv1">/sys/module/hid_apple/parameters/fnmode</annotate>
+  </action>
+
+</policyconfig>
