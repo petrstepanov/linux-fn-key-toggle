@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=FN Toggle
-Comment=Toggle Function Keys on Mac keyboard
+Comment=Toggle Function/Media Keys on Mac Keyboard
 Exec=fn-toggle.sh
 Categories=Utility
 Icon=fn-detecting
